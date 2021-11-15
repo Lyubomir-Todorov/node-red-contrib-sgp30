@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    RED.nodes.registerType('SGP30',{
+        category: 'Sensors',
+        color: '#ff7a70',
+        defaults: {
+            name: {value:""},
+            address : {value:"0x58"},
+            bus : {
+                value:1, 
+                validate:RED.validators.number()
+            }
+        },
+        inputs:1,
+        outputs:1,
+        icon: "arrow-in.svg",
+        label: function() {
+            return this.name||"SGP30";
+        },
+        oneditprepare : function() {
+            this.address = !this.address ? "0x58" : this.address;
+            this.bus = !this.bus ? 1 : this.bus;
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="SGP30">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-address"><i class="fa fa-microchip"></i> I2C Address</label>
+        <input type="text" id="node-input-address" placeholder="0x58">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-bus"><i class="fa fa-cog"></i> I2C Bus</label>
+        <input type="text" id="node-input-bus" placeholder="1">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="SGP30">
+    <p>A simple node that reads the total voltaile organic compounds and equivalent co2 from the SGP30 sensor. </p>
+</script>
