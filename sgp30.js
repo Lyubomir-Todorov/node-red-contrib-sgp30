@@ -8,7 +8,7 @@ module.exports = function(RED) {
       this.bus = parseInt(config.bus, 10);
 
       const i2c = require('i2c-bus');
-      const sgp30 = require('./BreakoutGardener/modules/SGP30')
+      const sgp30 = require('./BreakoutGardener/modules/SGP30');
 
       const ic2_bus = i2c.openSync(this.bus);
 
@@ -23,8 +23,7 @@ module.exports = function(RED) {
 
       node.on('input', function(msg) {
 
-        let readings = sgp30.Get();
-
+       let readings = sgp30.Get();
 
         msg.payload = {
           "tvoc" : readings[0], 
