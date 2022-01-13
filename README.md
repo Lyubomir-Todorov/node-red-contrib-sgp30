@@ -17,7 +17,7 @@ The package was tested with the SGP30 Air Quality Sensor Breakout from <a href =
   * [Name](#name)
   * [I2C Address](#i2c-address)
   * [I2C Bus](#i2c-bus)
-* [Bugs / Feature request](#bugs--feature-request)
+* [Bugs](#bugs--feature-request)
 * [License](#license)
 ---
 
