@@ -25,8 +25,6 @@ module.exports = function(RED) {
       node.on('input', function(msg) {
 
         let readings = sgp30.Get();
-        let readings = sgp30.Get();
-
 
         msg.payload = {
           "tvoc" : readings[0], 
