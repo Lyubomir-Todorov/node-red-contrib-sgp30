@@ -10,7 +10,6 @@ module.exports = function(RED) {
       const i2c = require('i2c-bus');
 
       const sgp30 = require('./sgp30_interface')
-      const sgp30 = require('./BreakoutGardener/modules/SGP30');
 
       const ic2_bus = i2c.openSync(this.bus);
 
