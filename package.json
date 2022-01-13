@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-sgp30",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A Node-RED node that provides access to the SGP30 air quality sensor",
   "node-red" : {
     "nodes": {
