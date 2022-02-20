@@ -45,6 +45,11 @@ Outputs total volatile organic compounds (TVOC) and equivalent CO2 (eCO2) readin
 
 ## Example
 ![Screenshot 2021-11-14 203212](https://user-images.githubusercontent.com/73316704/141708843-e5f7a02a-cb44-4e98-b534-7600a3978795.png)
+![Screenshot 2022-02-20 114914](https://user-images.githubusercontent.com/73316704/154854057-458e627b-acb1-4015-ae74-737873769477.png)
+
+Example setup using this node to trigger a reading once every second.
+
+*For the best results, readings should be taken once every second*
 
 ### Name
 
